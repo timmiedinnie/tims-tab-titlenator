@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Tims-Tab-Titlenator",
+  "description": "Change the current page title, sick!",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Tims-Tab-Titlenator",
+    "default_icon": "icon16.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
