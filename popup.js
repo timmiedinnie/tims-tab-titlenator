@@ -9,7 +9,7 @@ function rename(e) {
     window.close();
 }
 
-function close() {
+function closeTab(e) {
     doInCurrentTab(function (tab) {
             currentTabID = tab.id;
             chrome.tabs.remove(currentTabID);
@@ -32,6 +32,7 @@ function escapeInput(input) {
 document.addEventListener('DOMContentLoaded', function () {
     var renameButton = document.getElementById('rename');
     renameButton.addEventListener('click', rename);
+
     var closeButton = document.getElementById('close');
-    closeButton.addEventListener('click', close);
+    closeButton.addEventListener('click', closeTab);
 });
