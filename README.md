@@ -1,2 +1,2 @@
 # tims-tab-titlenator
-Chrome plugin
+It does wot it does
